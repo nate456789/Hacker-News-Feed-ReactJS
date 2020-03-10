@@ -17,6 +17,31 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="ClientApp" t="Include">
         <e p=".gitignore" t="Include" />
+        <e p="build" t="Include">
+          <e p="asset-manifest.json" t="Include" />
+          <e p="favicon.ico" t="Include" />
+          <e p="hacker-news-48.png" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="manifest.json" t="Include" />
+          <e p="precache-manifest.e41cb327ff4ff3363fc8bfbcbcb5c642.js" t="Include" />
+          <e p="service-worker.js" t="Include" />
+          <e p="static" t="Include">
+            <e p="css" t="Include">
+              <e p="2.22a7d4ef.chunk.css" t="Include" />
+              <e p="2.22a7d4ef.chunk.css.map" t="Include" />
+              <e p="main.553fc9a1.chunk.css" t="Include" />
+              <e p="main.553fc9a1.chunk.css.map" t="Include" />
+            </e>
+            <e p="js" t="Include">
+              <e p="2.6099cceb.chunk.js" t="Include" />
+              <e p="2.6099cceb.chunk.js.map" t="Include" />
+              <e p="main.c29b7245.chunk.js" t="Include" />
+              <e p="main.c29b7245.chunk.js.map" t="Include" />
+              <e p="runtime~main.a8a9905a.js" t="Include" />
+              <e p="runtime~main.a8a9905a.js.map" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="node_modules/@babel/parser" t="IncludeRecursive" />
         <e p="node_modules/@babel/types" t="IncludeRecursive" />
         <e p="node_modules/@jest/console" t="IncludeRecursive" />
@@ -64,6 +89,7 @@
         <e p="node_modules/reactstrap" t="IncludeRecursive" />
         <e p="node_modules/realpath-native" t="IncludeRecursive" />
         <e p="node_modules/rimraf" t="IncludeRecursive" />
+        <e p="node_modules/serialize-javascript" t="IncludeRecursive" />
         <e p="node_modules/source-map" t="IncludeRecursive" />
         <e p="node_modules/uri-js" t="IncludeRecursive" />
         <e p="node_modules/worker-farm" t="IncludeRecursive" />
@@ -111,6 +137,7 @@
             </e>
           </e>
         </e>
+        <e p="package.json" t="Include" />
       </e>
       <e p="Models" t="Include">
         <e p="FeedItemModel.cs" t="Include" />

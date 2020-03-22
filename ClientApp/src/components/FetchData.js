@@ -59,8 +59,21 @@ export class FetchData extends Component {
     }
 
     async fetchFeed() {
-        const response = await fetch('NewsFeed');
-        const data = await response.json();
-        this.setState({feedStories: data, loading: false});
+        try {
+            const apiRoute = "https://api-hackernews.battinich.com/newsfeed";
+            const initValue = {
+                mode: 'no-cors'
+            };
+            const dataRequest = new Request(apiRoute);
+            const response = await fetch(apiRoute);
+            console.log('Response ==>', response);
+            if (response.status === 200) {
+                const data = await response.json();
+                this.setState({feedStories: data, loading: false});
+            }
+        } catch (errors) {
+            console.log('errors ===>', errors);
+        }
+
     }
 }

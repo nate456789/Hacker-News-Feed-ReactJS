@@ -39,6 +39,8 @@
       <_ContentIncludedByDefault Remove="Hacker-News-Feed.Tests\obj\Hacker-News-Feed.Tests.csproj.nuget.dgspec.json" />
       <_ContentIncludedByDefault Remove="Hacker-News-Feed.Tests\obj\project.assets.json" />
       <_ContentIncludedByDefault Remove="Hacker-News-Feed.Tests\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="ClientApp\build\asset-manifest.json" />
+      <_ContentIncludedByDefault Remove="ClientApp\build\manifest.json" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

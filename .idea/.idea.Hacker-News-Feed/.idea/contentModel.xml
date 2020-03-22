@@ -17,31 +17,6 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="ClientApp" t="Include">
         <e p=".gitignore" t="Include" />
-        <e p="build" t="Include">
-          <e p="asset-manifest.json" t="Include" />
-          <e p="favicon.ico" t="Include" />
-          <e p="hacker-news-48.png" t="Include" />
-          <e p="index.html" t="Include" />
-          <e p="manifest.json" t="Include" />
-          <e p="precache-manifest.e41cb327ff4ff3363fc8bfbcbcb5c642.js" t="Include" />
-          <e p="service-worker.js" t="Include" />
-          <e p="static" t="Include">
-            <e p="css" t="Include">
-              <e p="2.22a7d4ef.chunk.css" t="Include" />
-              <e p="2.22a7d4ef.chunk.css.map" t="Include" />
-              <e p="main.553fc9a1.chunk.css" t="Include" />
-              <e p="main.553fc9a1.chunk.css.map" t="Include" />
-            </e>
-            <e p="js" t="Include">
-              <e p="2.6099cceb.chunk.js" t="Include" />
-              <e p="2.6099cceb.chunk.js.map" t="Include" />
-              <e p="main.c29b7245.chunk.js" t="Include" />
-              <e p="main.c29b7245.chunk.js.map" t="Include" />
-              <e p="runtime~main.a8a9905a.js" t="Include" />
-              <e p="runtime~main.a8a9905a.js.map" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="node_modules/@babel/parser" t="IncludeRecursive" />
         <e p="node_modules/@babel/types" t="IncludeRecursive" />
         <e p="node_modules/@jest/console" t="IncludeRecursive" />
@@ -96,6 +71,7 @@
         <e p="package-lock.json" t="Include" />
         <e p="package.json" t="Include" />
         <e p="public" t="Include">
+          <e p=".htaccess" t="Include" />
           <e p="favicon.ico" t="Include" />
           <e p="hacker-news-48.png" t="Include" />
           <e p="index.html" t="Include" />
@@ -122,6 +98,7 @@
         </e>
       </e>
       <e p="Controllers" t="Include">
+        <e p="HealthController.cs" t="Include" />
         <e p="NewsFeedController.cs" t="Include" />
       </e>
       <e p="Hacker-News-Feed.csproj" t="IncludeRecursive" />
@@ -131,7 +108,7 @@
         <e p="Hacker-News-Feed.Tests.csproj" t="IncludeRecursive" />
         <e p="NewsFeedTest.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="Hacker-News-Feed.Tests.AssemblyInfo.cs" t="Include" />
             </e>
@@ -145,7 +122,7 @@
         <e p="StoryResponseModel.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
-        <e p="Debug" t="Include">
+        <e p="Release" t="Include">
           <e p="netcoreapp3.1" t="Include">
             <e p="Hacker-News-Feed.AssemblyInfo.cs" t="Include" />
             <e p="Hacker-News-Feed.RazorAssemblyInfo.cs" t="Include" />

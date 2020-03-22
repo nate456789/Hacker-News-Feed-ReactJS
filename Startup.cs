@@ -18,12 +18,22 @@ namespace Hacker_News_Feed
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
         public ILifetimeScope AutofacContainer { get; private set; }
         
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("https://battinich.com",
+                            "https://api-hackernews.battinich.com");
+                    });
+            });
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration => { configuration.RootPath = "ClientApp/dist"; });
@@ -56,6 +66,8 @@ namespace Hacker_News_Feed
             // If, for some reason, you need a reference to the built container, you
             // can use the convenience extension method GetAutofacRoot.
             this.AutofacContainer = app.ApplicationServices.GetAutofacRoot();
+            
+            app.UseCors(MyAllowSpecificOrigins); 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             if (!env.IsDevelopment())

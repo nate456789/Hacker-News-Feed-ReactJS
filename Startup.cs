@@ -32,7 +32,8 @@ namespace Hacker_News_Feed
                     {
                         builder.WithOrigins("https://battinich.com",
                             "https://api-hackernews.battinich.com",
-                            "https://hackernews.battinich.com");
+                            "https://hackernews.battinich.com",
+                            "https://api.battinich.com");
                     });
             });
             services.AddControllersWithViews();

@@ -1,6 +1,6 @@
 {
   "name": "hacker_news_feed",
-  "homepage": ".",
+  "homepage": "api.battinich.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

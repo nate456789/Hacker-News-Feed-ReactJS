@@ -60,12 +60,12 @@ export class FetchData extends Component {
 
     async fetchFeed() {
         try {
-            const apiRoute = "https://api-hackernews.battinich.com/newsfeed";
+                const apiRoute = "https://api.battinich.com/newsfeed";
             const initValue = {
                 mode: 'no-cors'
             };
             const dataRequest = new Request(apiRoute);
-            const response = await fetch(apiRoute);
+            const response = await fetch(dataRequest);
             console.log('Response ==>', response);
             if (response.status === 200) {
                 const data = await response.json();
